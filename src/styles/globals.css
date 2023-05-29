@@ -18,10 +18,19 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(225, 225, 225);
+
+}
+
+.section {
+  height: 50vh;
+  padding: 1rem;
+  margin: 0rem auto;
+}
+
+.nico-background {
+  background-image: url('/assets/nico.jpg');
+  background-position: calc(100% - 3rem) calc(100% + 14rem);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
