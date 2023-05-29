@@ -26,9 +26,6 @@ export default function Frontend() {
     >
       <div className='relative z-10 mt-12'>
         <AnimatedTitle text="Do you need a Front-end developer?" />
-        {/* <h1 className='mt-2 mb-3 text-3xl font-bold text-center text-white sm:mb-6 sm:mt-3 md:mb-6 md:mt-6'>
-         Do you need a Front-end developer?
-        </h1> */}
         <AnimatedText text="👈 Contact this guy!" />
           <motion.div
            variants={logos}

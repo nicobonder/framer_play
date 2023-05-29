@@ -27,7 +27,7 @@ export default function Father() {
   };
 
   return (
-    <section className='px-[1rem] py-[1rem] h-[60vh] bg-[#8a2be2]'>
+    <section className='px-[1rem] py-[1rem] h-[60vh] bg-[#48A167]'>
       <h1 className='text-lg md:text-2xl font-bold mb-4'>
         Framer Motion allows you to animate father and children elements
       </h1>
@@ -46,7 +46,7 @@ export default function Father() {
             <img
               className='w-32 h-34'
               src='/assets/homer.png'
-              alt='homer'
+              alt='homer Simpsons'
             />
           </motion.li>
 
@@ -56,7 +56,7 @@ export default function Father() {
             <img
               className='w-20 h-34'
               src='/assets/bart.png'
-              alt='homer'
+              alt='bart'
             />
           </motion.li>
 
@@ -66,7 +66,7 @@ export default function Father() {
             <img
               className='w-20 h-34'
               src='/assets/lisa.png'
-              alt='homer'
+              alt='Lisa'
             />
           </motion.li>
 
@@ -76,7 +76,7 @@ export default function Father() {
             <img
               className='w-20 h-34'
               src='/assets/maggie.png'
-              alt='homer'
+              alt='maggie'
             />
           </motion.li>
         </motion.ol>

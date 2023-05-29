@@ -7,6 +7,7 @@ import SquareCircle from '@/components/squareCircle/SquareCircle'
 import Wheel from '@/components/wheel/Wheel'
 import Father from '@/components/father/Father'
 import Frontend from '@/components/frontend/Frontend'
+import Magic from '@/components/magic/Magic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Bird />
       <SquareCircle />
       <Wheel />
+      <Magic />
       <Father />
       <Frontend />
     </main>
