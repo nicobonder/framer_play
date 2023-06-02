@@ -5,7 +5,7 @@ export default function BeFree() {
   return (
     <section className='section  bg-[#48A167]'>
         <motion.div
-            className='h-80 w-[33%] bg bg-[#8a2be2] place-items-center flex flex-col justify-center'
+            className='h-80 w-[33%] bg-[#8a2be2] place-items-center flex flex-col justify-center'
            
             animate={{ opacity: [0.5, 1 ], x: ['-100%', '200%']}}
             transition={{ duration: 2, ease: 'easeInOut' }}

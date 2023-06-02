@@ -8,6 +8,8 @@ import Wheel from '@/components/wheel/Wheel'
 import Father from '@/components/father/Father'
 import Frontend from '@/components/frontend/Frontend'
 import Magic from '@/components/magic/Magic'
+import SlideShow from '@/components/slideshow/slideshow'
+import ParallaxEffect from '@/components/parallax/Parallax'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +19,12 @@ export default function Home() {
       <BeFree />
       <Drag />
       <Bird />
-      <SquareCircle />
+      <SlideShow />
       <Wheel />
-      <Magic />
+      <SquareCircle />
       <Father />
+      <Magic />
+      <ParallaxEffect />
       <Frontend />
     </main>
   )

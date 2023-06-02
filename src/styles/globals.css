@@ -34,3 +34,62 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.slideBtn {
+  padding: 16px;
+    font-size: 18px;
+    width: 64px;
+    aspect-ratio: 1;
+    border-radius: 32px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: green;
+}
+
+.slideBtn:hover {
+  background-color: #24243e;
+}
+
+.prevButton {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.nextButton {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wheelTitle {
+  color: black;
+  background-image: linear-gradient(100deg,hsla(297,59%,34%,1) 0%,hsla(345,74%,58%,1) 50%,hsla(22,0%,0%,1) 90%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.parallaxcChild {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

@@ -35,6 +35,7 @@ export default function Frontend() {
           className='w-60 flex place-content-center mt-4 gap-8'>
           <a
             href="https://www.linkedin.com/in/nicobonder/"
+            target='_blank'
             alt="link to Linkedin"
           >
             <svg className='w-16 h-16 fill-white' id="linkedin_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -46,7 +47,9 @@ export default function Frontend() {
                 101.9V416z" />
             </svg>
           </a>
-          <a href="https://github.com/nicobonder/" alt="link to github">
+          <a href="https://github.com/nicobonder/" 
+          target='_blank'
+          alt="link to github">
             <svg className='w-16 h-16 fill-white' id="github_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
               <path
                 d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 
