@@ -12,11 +12,11 @@ export default function BeFree() {
         >
             <motion.p
                 className='text-white text-center text-lg font-bold pt-2'
-            >I'm going to start moving every time the page loads </motion.p>
+            >I&apos;m going to start moving every time the page loads </motion.p>
             <br />
              <motion.p
                 className='text-white text-center text-lg font-bold'
-            >and you can't do anything to stop it...</motion.p>
+            >and you can&apos;t do anything to stop it...</motion.p>
         </motion.div>
     </section>
   )

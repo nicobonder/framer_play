@@ -23,7 +23,7 @@ export default function Drag() {
           <h3 className='text-white text-lg font-bold'>DRAG & DROP</h3>
         </motion.div>
       </motion.div>
-      <p className='text-sm md:text-base font-bold text-white mt-2'>It's not much fun with restrictions, is it?</p>
+      <p className='text-sm md:text-base font-bold text-white mt-2'>It &apos;s not much fun with restrictions, is it?</p>
     </section>
   );
 }
