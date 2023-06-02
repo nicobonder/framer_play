@@ -20,8 +20,8 @@ export default function Home() {
       <Drag />
       <Bird />
       <SlideShow />
-      <Wheel />
       <SquareCircle />
+      <Wheel />
       <Father />
       <Magic />
       <ParallaxEffect />

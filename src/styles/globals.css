@@ -79,7 +79,7 @@ body {
 
 .wheelTitle {
   color: black;
-  background-image: linear-gradient(100deg,hsla(297,59%,34%,1) 0%,hsla(345,74%,58%,1) 50%,hsla(22,0%,0%,1) 90%);
+  background-image: linear-gradient(100deg,rgb(175, 247, 66) 0%,rgb(251, 180, 39) 60%,hsla(22,0%,0%,1) 90%);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;

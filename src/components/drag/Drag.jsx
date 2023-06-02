@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Drag() {
   return (
-    <section className='section bg-[#8a2be2]'>
+    <section className='flex flex-col justify-center section bg-[#8a2be2]'>
       <h1 className='text-lg md:text-2xl font-bold mb-1'>
         ...but you can play with this one
       </h1>

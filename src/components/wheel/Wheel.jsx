@@ -25,17 +25,13 @@ export default function Wheel() {
   };
 
   return (
-    <section className='section bg-[#48A167]'>
+    <section className='section bg-[#8a2be2]'>
       <motion.h1 className="text-lg md:text-2xl font-bold mb-8 text-center wheelTitle"
         
       >Did you know that a square wheel can be rotated?</motion.h1>
 
-{/* className='h-40 w-40 bg bg-[#8a2be2] border border-white border-2 place-items-center flex flex-col justify-center' */}
          <motion.div 
-              // animate={{ rotate: 0, opacity: 0.7, x: 0 }}
-              // initial={{ rotate: 360, opacity: 1, x: 400 }}
-              // transition={{ duration: 2 }}
-              className="h-36 w-36 bg-[#8a2be2] my-8"
+              className="h-36 w-36 bg-[#48A167] my-8"
               animate={control}
               >
               </motion.div>

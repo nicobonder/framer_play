@@ -5,9 +5,9 @@ export default function SquareCircle() {
   const control = useAnimation();
 
   return (
-    <section className='pt-4 bg-[#8a2be2] h-[60vh] px-[1rem]'>
+    <section className='flex flex-col justify-center pt-6 bg-[#48A167] h-[60vh] px-[1rem] '>
       <motion.div
-        className='py-1 bg-[#48A167] w-[30%]'
+        className='py-1 bg-[#8a2be2] w-[30%]'
         initial={{ scale: 1.25, x: 300, opacity: 0 }}
         whileInView={{ scale: 1, x: 0, opacity: 1 }}
         transition={{ duration: 1, type: "tween" }}
@@ -37,8 +37,8 @@ export default function SquareCircle() {
         className="flex justify-center my-8"
       >
             <button 
-                className="w-36 h-10 border px-1 bg-[#48A167] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
-               hover:text-[#48A167] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
+                className="w-36 h-10 border px-1 bg-[#8a2be2] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
+               hover:text-[#8a2be2] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
                 onClick={() => {
                 control.start({
                     x: '30vw',
@@ -46,8 +46,8 @@ export default function SquareCircle() {
                 })
             }}>Move Right</button>
                <button
-                className="w-36 h-10 border px-1 bg-[#48A167] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
-               hover:text-[#48A167] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
+                className="w-36 h-10 border px-1 bg-[#8a2be2] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
+               hover:text-[#8a2be2] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
                 onClick={() => {
                 control.start({
                     x: '0%',
@@ -55,8 +55,8 @@ export default function SquareCircle() {
                 })
             }}>Back Left</button>
                <button
-               className="w-36 h-10 border px-1 bg-[#48A167] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
-               hover:text-[#48A167] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
+               className="w-36 h-10 border px-1 bg-[#8a2be2] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
+               hover:text-[#8a2be2] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out"
                onClick={() => {
                 control.start({
                     borderRadius: '50%',
@@ -64,8 +64,8 @@ export default function SquareCircle() {
                 })
             }}>Circle It!</button>
                <button
-               className="w-36 h-10 border px-1 bg-[#48A167] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
-               hover:text-[#48A167] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out" 
+               className="w-36 h-10 border px-1 bg-[#8a2be2] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
+               hover:text-[#8a2be2] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out" 
                onClick={() => {
                 control.start({
                     borderRadius: '0%',
@@ -73,15 +73,15 @@ export default function SquareCircle() {
                 })
             }}>Square It!</button>
             <button
-               className="w-36 h-10 border px-1 bg-[#48A167] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
-               hover:text-[#48A167] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out" 
+               className="w-36 h-10 border px-1 bg-[#8a2be2] text-white font-bold text-xs sm:text-md md:text-lg md:font-normal
+               hover:text-[#8a2be2] hover:bg-blue-100 hover:shadow-[0_35px_60px_-5px_rgba(255,255,255,0.3)] transition duration-300 ease-in-out" 
                onClick={() => {
                 control.stop()
             }}>Stop Animation</button>
         </motion.div>
       <motion.div className='w-full justify-center flex mb-10'>
         <motion.div
-          className='h-40 w-40 bg bg-[#48A167] place-items-center flex flex-col justify-center'
+          className='h-40 w-40 bg-[#8a2be2] place-items-center flex flex-col justify-center'
           animate={control}
         >
           <h3 className='text-white text-lg font-bold'>MOVE IT!</h3>

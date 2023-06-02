@@ -64,9 +64,9 @@ const variants = {
   }
 
   return (
-    <div className='flex flex-col h-[100%] bg-[#8a2be2] py-2'>
-        <h1 className='text-lg md:text-2xl font-bold mb-4 text-center'>Framer Motion Slideshow</h1>
-      <div className='mx-auto my-auto w-[60%] relative overflow-hidden rounded-2xl'
+    <section className='flex flex-col h-[100vh] bg-[#8a2be2] py-2'>
+        <h1 className='text-lg md:text-2xl font-bold mb-4 text-center pt-4'>Framer Motion Slideshow</h1>
+      <div className=' flex justify-center mx-auto my-auto w-[60%] relative overflow-hidden rounded-2xl'
         style={{ aspectRatio: 'calc(16 / 9)' }}
       >
         <AnimatePresence initial={false} custom={direction}>
@@ -89,6 +89,6 @@ const variants = {
         <svg style={{color: "white"}} xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" fill="white"></path> </svg>
         </button>
       </div>
-    </div>
+    </section>
   )
 }

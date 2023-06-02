@@ -12,7 +12,7 @@ export default function Father() {
         x: 0,
         opacity: 1,
       transition: {
-        staggerChildren: 0.6
+        staggerChildren: 0.65
       }
     }
   };
@@ -22,13 +22,13 @@ export default function Father() {
     show: {
       x: 0,
       opacity: 1,
-      staggerChildren: 0.4,
+      staggerChildren: 0.5,
     }
   };
 
   return (
-    <section className='px-[1rem] py-[1rem] h-[60vh] bg-[#48A167]'>
-      <h1 className='text-lg md:text-2xl font-bold mb-4'>
+    <section className='flex flex-col px-[1rem] h-[60vh] bg-[#48A167] items-center justify-center'>
+      <h1 className='text-lg text-center md:text-2xl font-bold mb-4'>
         Framer Motion allows you to animate father and children elements
       </h1>
 
