@@ -36,17 +36,16 @@ body {
 }
 
 .slideBtn {
-  padding: 16px;
-    font-size: 18px;
-    width: 64px;
+    padding: 5%;
+    /* width: 4rem; */
     aspect-ratio: 1;
-    border-radius: 32px;
+    border-radius: 50%;
     background-color: black;
     border: none;
     cursor: pointer;
     text-align: center;
-    color: green;
 }
+
 
 .slideBtn:hover {
   background-color: #24243e;
@@ -55,14 +54,14 @@ body {
 .prevButton {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 1rem;
   transform: translateY(-50%);
 }
 
 .nextButton {
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 1rem;
   transform: translateY(-50%);
   
 }
@@ -92,4 +91,36 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+@media (width <= 768px) {
+  .svgSlide {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .slideBtn {
+    padding: 2%;
+  }
+}
+
+@media (768px < width <= 1024px) {
+  .svgSlide {
+    width: 1rem;
+    height: 1rem;
+  }
+  .slideBtn {
+    padding: 2%;
+  }
+
+}
+
+@media (width > 1024px) {
+  .svgSlide {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .slideBtn {
+    padding: 2%;
+  }
 }

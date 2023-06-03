@@ -5,7 +5,7 @@ export default function Bird() {
   return (
     <section className='px-[1rem] h-[100vh] bg-[#48A167] py-[1rem]'>
       <div className="">
-        <h1 className='text-lg md:text-2xl font-bold mb-1'>
+        <h1 className='text-lg md:text-2xl lg:text-3xl font-bold mb-1'>
           Ok, now you can fell free
         </h1>
         <h2 className='text-md md:text-xl font-bold mb-1'>

@@ -5,9 +5,9 @@ export default function SquareCircle() {
   const control = useAnimation();
 
   return (
-    <section className='flex flex-col justify-center pt-6 bg-[#48A167] h-[60vh] px-[1rem] '>
+    <section className='flex flex-col justify-center pt-6 sm:pt-1 bg-[#48A167] h-[60vh] md:h-[80vh] px-[1rem]'>
       <motion.div
-        className='py-1 bg-[#8a2be2] w-[30%]'
+        className='py-1 px-1 bg-[#8a2be2] w-[70%] md:w-[35%] mb-2 lg:mb-8'
         initial={{ scale: 1.25, x: 300, opacity: 0 }}
         whileInView={{ scale: 1, x: 0, opacity: 1 }}
         transition={{ duration: 1, type: "tween" }}
@@ -15,7 +15,7 @@ export default function SquareCircle() {
       >
 
         <motion.h1
-          className='text-lg md:text-2xl font-bold mb-1 text-center'
+          className='text-md md:text-2xl font-bold mb-1 text-center'
           initial={{ scale: 1.25, x: -300, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
           transition={{ duration: 1, type: "tween" }}
@@ -24,7 +24,7 @@ export default function SquareCircle() {
           Do you want to play with buttons?
         </motion.h1>
         <motion.h2
-          className='text-md md:text-xl font-bold mb-1 text-white text-center'
+          className='text-sm md:text-xl font-bold mb-1 text-white text-center'
           initial={{ scale: 1.25, x: -300, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4, type: "tween" }}
@@ -42,7 +42,7 @@ export default function SquareCircle() {
                 onClick={() => {
                 control.start({
                     x: '30vw',
-                    transition: { duration: 2}
+                    transition: { duration: 1.5}
                 })
             }}>Move Right</button>
                <button
@@ -51,7 +51,7 @@ export default function SquareCircle() {
                 onClick={() => {
                 control.start({
                     x: '0%',
-                    transition: { duration: 2}
+                    transition: { duration: 1.5}
                 })
             }}>Back Left</button>
                <button
@@ -60,7 +60,7 @@ export default function SquareCircle() {
                onClick={() => {
                 control.start({
                     borderRadius: '50%',
-                    transition: { duration: 2}
+                    transition: { duration: 1.5}
                 })
             }}>Circle It!</button>
                <button
@@ -69,7 +69,7 @@ export default function SquareCircle() {
                onClick={() => {
                 control.start({
                     borderRadius: '0%',
-                    transition: { duration: 2}
+                    transition: { duration: 1.5}
                 })
             }}>Square It!</button>
             <button
@@ -81,7 +81,7 @@ export default function SquareCircle() {
         </motion.div>
       <motion.div className='w-full justify-center flex mb-10'>
         <motion.div
-          className='h-40 w-40 bg-[#8a2be2] place-items-center flex flex-col justify-center'
+          className='h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 lg:mt-8 bg-[#8a2be2] place-items-center flex flex-col justify-center'
           animate={control}
         >
           <h3 className='text-white text-lg font-bold'>MOVE IT!</h3>
