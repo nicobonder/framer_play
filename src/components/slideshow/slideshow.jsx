@@ -9,6 +9,8 @@ const images = [
   'https://i.imgur.com/bnvfvjk.png'
 ]
 
+
+
 const variants = {
   hidden: direction => {
     return {
@@ -41,6 +43,7 @@ const variants = {
  export default function SlideShow() {
   const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(0)
+
 
   function nextStep() {
     setDirection(1) // x moves + 1000

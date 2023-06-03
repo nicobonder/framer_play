@@ -27,6 +27,7 @@ export default function ParallaxEffect() {
       style={{
         backgroundImage:
           'url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")',
+        
       }}
       className="sticky top-0 flex min-h-[70vh] items-center justify-center overflow-hidden -z-10 bg-cover bg-center bg-no-repeat"
     >
@@ -47,7 +48,7 @@ export default function ParallaxEffect() {
         >
           <motion.h2
           style={{ x: xLeft, y: yLeft }}
-          className="text-3xl text-white font-bold">PARALLAX EFFECT</motion.h2>
+          className="p-4 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 text-lg sm:text-2xl mb-24 ml-8 lg:ml-4 lg:text-3xl text-white font-bold">PARALLAX EFFECT</motion.h2>
         </motion.div>
         
         <motion.div
@@ -60,7 +61,7 @@ export default function ParallaxEffect() {
           <motion.img
           src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
           style={{ x: xRight, y: yRight }}
-            className="w-[50%] h-auto" 
+            className="w-[80%] md:w-[50%] h-auto mr-12 lg:mr-2 backdrop-blur-xl" 
             
             />
          

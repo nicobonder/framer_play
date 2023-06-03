@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
 
 
 export default function Wheel() {
-  // const [show, setShow] = useState(true);
   const control = useAnimation();
 
   const handleRotate = () => {
@@ -25,31 +24,31 @@ export default function Wheel() {
   };
 
   return (
-    <section className='section bg-[#8a2be2]'>
-      <motion.h1 className="text-lg md:text-2xl font-bold mb-8 text-center wheelTitle"
+    <section className='h-[40vh] md:h-[55vh] lg:h-[60vh] p-2 md:px-4 bg-[#8a2be2]'>
+      <motion.h1 className="text-lg pt-2 md:text-2xl lg:text-3xl font-bold md:mb-8 text-center wheelTitle"
         
       >Did you know that a square wheel can be rotated?</motion.h1>
 
          <motion.div 
-              className="h-36 w-36 bg-[#48A167] my-8"
+              className="h-14 sm:h-20 md:h-28 lg:h-40 w-14 sm:w-20 md:w-28 lg:w-40 bg-[#48A167] my-8 md:my-12 lg:my-10"
               animate={control}
               >
               </motion.div>
           <div className="flex justify-center">
         <div className="mt-1 flex gap-4">
         <button  
-          className="w-40 h-10 border border-white text-lg text-white font-bold"
+          className="w-20 h-8 md:w-40 md:h-10 border border-white text-lg text-white font-bold"
         onClick={handleRotate}
             >ROTATE
         </button>
         <button  
-          className="w-40 h-10 border border-white text-lg text-white font-bold"
+          className="w-20 h-8 md:w-40 md:h-10 border border-white text-lg text-white font-bold"
           onClick={() => {
             control.stop()}}
             >STOP
         </button>
         <button  
-          className="w-40 h-10 border border-white text-lg text-white font-bold"
+          className="w-20 h-8 md:w-40 md:h-10 border border-white text-lg text-white font-bold"
         onClick={handleBack}
             >BACK
         </button>

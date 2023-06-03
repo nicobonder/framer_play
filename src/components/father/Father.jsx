@@ -27,14 +27,14 @@ export default function Father() {
   };
 
   return (
-    <section className='flex flex-col px-[1rem] h-[60vh] bg-[#48A167] items-center justify-center'>
-      <h1 className='text-lg text-center md:text-2xl font-bold mb-4'>
+    <section className='flex flex-col py-2 px-[1rem] h-[50vh] md:h-[55vh] bg-[#48A167] items-center'>
+      <h1 className='text-lg text-center md:text-2xl lg:text-3xl font-bold mb-4'>
         Framer Motion allows you to animate father and children elements
       </h1>
 
-      <div className='flex gap-8 items-end'>
+      <div className='flex items-end'>
         <motion.ol
-          className='flex gap-12 items-end'
+          className='flex gap-4 md:gap-12 items-end sm:mt-6 md:mt-8'
           variants={container}
           initial='hidden'
           whileInView='show'
@@ -44,7 +44,7 @@ export default function Father() {
           variants={childVariants}
           >
             <img
-              className='w-32 h-34'
+              className='w-auto h-[30vh] md:h-[35vh]'
               src='/assets/homer.png'
               alt='homer Simpsons'
             />
@@ -54,7 +54,7 @@ export default function Father() {
           variants={childVariants}
           >
             <img
-              className='w-20 h-34'
+              className='w-auto h-[25vh] md:h-[28vh]'
               src='/assets/bart.png'
               alt='bart'
             />
@@ -64,7 +64,7 @@ export default function Father() {
           variants={childVariants}
           >
             <img
-              className='w-20 h-34'
+              className='w-auto h-[22vh] md:h-[24vh]'
               src='/assets/lisa.png'
               alt='Lisa'
             />
@@ -74,7 +74,7 @@ export default function Father() {
           variants={childVariants}
           >
             <img
-              className='w-20 h-34'
+              className='w-auto h-[16vh] md:h-[20vh]'
               src='/assets/maggie.png'
               alt='maggie'
             />
