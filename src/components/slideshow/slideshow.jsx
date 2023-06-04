@@ -9,8 +9,6 @@ const images = [
   'https://i.imgur.com/bnvfvjk.png'
 ]
 
-
-
 const variants = {
   hidden: direction => {
     return {
