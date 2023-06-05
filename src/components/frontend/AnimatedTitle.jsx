@@ -43,7 +43,7 @@ export default function AnimatedTitle ({ text }) {
         initial="hidden"
         whileInView='visible'
         viewport={{ once: true }}
-        className='flex justify-center items-center w-[290px] sm:w-[340px] md:w-[400px] lg:w-[550px] ml-auto'
+        className='flex justify-center items-center w-[265px] sm:w-[340px] md:w-[400px] lg:w-[550px] ml-auto'
       >
         {words.map((word, index) => (
           <motion.span

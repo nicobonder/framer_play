@@ -29,7 +29,7 @@ const variants = {
   visible: windowWidth => {
     if(windowWidth < 560) {
       return {
-        x: -100,
+        x: -95,
         opacity: 0,
         width: 0
       }
@@ -70,7 +70,7 @@ const variants = {
   hidden: windowWidth => {
     if(windowWidth < 560) {
       return {
-        x: 20,
+        x: 15,
         opacity: 0.8,
         width: 40,
         transition: {
@@ -197,10 +197,6 @@ else if (windowWidth >= 840 && windowWidth < 1024) {
 
           <AnimatePresence>
             { show && <motion.div
-              // animate={{ width: 0, opacity: 1, x: -250 }}
-              // initial={{ width: 80, opacity: 0.8, x: 200 }}
-              // exit= {{width: 80, opacity: 1, x: 200 }}
-              // transition={{ duration: 1, ease: easeIn, ease: 'linear' }}
               variants={variants}
               animate='visible'
               initial='hidden'
@@ -218,11 +214,6 @@ else if (windowWidth >= 840 && windowWidth < 1024) {
               animate={{ opacity: 1 }}
               exit= {{width: 0, opacity: 0, x: 0}}
               transition={{ delay: 1, duration: 0.5 }}
-              // variants={variants}
-              // animate='visible'
-              // initial='hidden'
-              // exit='exit'
-              // custom={windowWidth}
               >
               </motion.img>}
               </AnimatePresence>

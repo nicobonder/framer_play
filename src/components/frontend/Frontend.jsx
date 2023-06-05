@@ -17,7 +17,7 @@ export default function Frontend() {
     <main className="nico-background flex w-[full] h-[110vh] lg:h-[100vh] bg-cover bg-cover justify-end"
     >
     <div
-      className='relative flex flex-col w-[75%] sm:w-[60%] h-[110vh] lg:h-[100vh] justify-center'
+      className='relative flex flex-col w-[80%] sm:w-[60%] h-[110vh] lg:h-[100vh] justify-center'
       style={{
           background:
             "linear-gradient(175deg, #48A167  0%, rgba(80,4,128,1) 100%)",
@@ -32,7 +32,7 @@ export default function Frontend() {
            initial='hidden'
            whileInView='visible'
            viewport={{ once: true }}
-          className='flex justify-center items-center w-[290px] sm:w-[340px] md:w-[400px] lg:w-[550px] ml-auto gap-4 mt-4'>
+          className='flex justify-center items-center w-[265px] sm:w-[340px] md:w-[400px] lg:w-[550px] ml-auto gap-4 mt-4'>
           <a
             href="https://www.linkedin.com/in/nicobonder/"
             target='_blank'

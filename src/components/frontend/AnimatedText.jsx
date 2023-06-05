@@ -39,7 +39,7 @@ export default function AnimatedText({ text }) {
     
       return (
         <motion.div
-          className='overflow-hidden flex justify-center items-center w-[290px] sm:w-[340px] md:w-[400px] lg:w-[550px] lg:py-1 ml-auto'
+          className='overflow-hidden flex justify-center items-center w-[265px] sm:w-[340px] md:w-[400px] lg:w-[550px] lg:py-1 ml-auto'
           variants={container}
           initial="hidden"
            whileInView='visible'

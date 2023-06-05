@@ -8,7 +8,7 @@ export default function SquareCircle() {
     <section className='flex flex-col justify-center pt-6 sm:pt-1 bg-[#48A167] h-[60vh] md:h-[80vh] px-[1rem]'>
       <motion.div
         className='py-1 px-1 bg-[#8a2be2] w-[70%] md:w-[35%] mb-2 lg:mb-8'
-        initial={{ scale: 1.25, x: 100, opacity: 0 }}
+        initial={{ scale: 1.15, x: 90, opacity: 0 }}
         whileInView={{ scale: 1, x: 0, opacity: 1 }}
         transition={{ duration: 1, type: "tween" }}
         viewport={{ once: true }}
@@ -16,7 +16,7 @@ export default function SquareCircle() {
 
         <motion.h1
           className='text-md md:text-2xl font-bold mb-1 text-center'
-          initial={{ scale: 1.25, x: -300, opacity: 0 }}
+          initial={{ scale: 1.15, x: -300, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
           transition={{ duration: 1, type: "tween" }}
           viewport={{ once: true }}
@@ -25,7 +25,7 @@ export default function SquareCircle() {
         </motion.h1>
         <motion.h2
           className='text-sm md:text-xl font-bold mb-1 text-white text-center'
-          initial={{ scale: 1.25, x: -300, opacity: 0 }}
+          initial={{ scale: 1.15, x: -300, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4, type: "tween" }}
           viewport={{ once: true }}
