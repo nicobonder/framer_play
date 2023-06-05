@@ -30,9 +30,52 @@ body {
 
 .nico-background {
   background-image: url('/assets/nico.jpg');
-  background-position: calc(100% - 3rem) calc(100% + 14rem);
+  /* background-position: calc(100% - 3rem) calc(100% + 14rem); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (width <= 485px) {
+  .nico-background {
+    background-position: calc(80% + 7rem) calc(100%);
+  }
+}
+
+@media (485px < width <= 640px) {
+  .nico-background {
+    background-position: calc(80% + 1rem) calc(100%);
+  }
+}
+
+@media (640px < width <= 768px) {
+  .nico-background {
+    background-position: calc(80% - 1rem) calc(100%);
+  }
+
+  .logoNet {
+    width: 3rem !important;
+    height: 3rem !important; 
+  }
+}
+
+@media (768px < width <= 1024px) {
+  .nico-background {
+    background-position: calc(80% - 7rem) calc(100%);
+  }
+  .logoNet {
+    width: 3rem !important;
+    height: 3rem !important; 
+  }
+}
+
+@media (width > 1024px) {
+  .nico-background {
+    background-position: calc(80% - 16rem) calc(40%);
+  }
+  .logoNet {
+    width: 3rem !important;
+    height: 3rem !important; 
+  }
 }
 
 .slideBtn {
@@ -86,12 +129,13 @@ body {
 }
 
 .parallaxcChild {
-  padding: 2rem;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+
 
 @media (width <= 768px) {
   .svgSlide {
@@ -101,6 +145,11 @@ body {
 
   .slideBtn {
     padding: 2%;
+  }
+
+  .logoNet {
+    width: 2rem;
+    height: 2rem;
   }
 }
 

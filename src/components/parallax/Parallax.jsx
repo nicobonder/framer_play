@@ -4,11 +4,11 @@ import { motion, useTransform, useMotionValue, useScroll } from "framer-motion";
 export default function ParallaxEffect() {
     const { scrollYProgress } = useScroll()
 
-    const xLeft = useTransform(scrollYProgress, [0, 1], [1000, -400]);
-    const yLeft = useTransform(scrollYProgress, [0, 1], [0, 100]);
+    const xLeft = useTransform(scrollYProgress, [0, 1], [420, -250]);
+    const yLeft = useTransform(scrollYProgress, [0, 1], [100, 200]);
 
-    const xRight = useTransform(scrollYProgress, [0, 1], [-100, 100]);
-    const yRight = useTransform(scrollYProgress, [0, 1], [1200, -400]);
+    const xRight = useTransform(scrollYProgress, [0, 1], [-200, 0]);
+    const yRight = useTransform(scrollYProgress, [0, 1], [1800, -280]);
 
 //   useEffect(() => {
 //     const handleScroll = () => {
@@ -23,7 +23,7 @@ export default function ParallaxEffect() {
 //     }, [scrollY]);
 
   return (
-    <div
+    <section
       style={{
         backgroundImage:
           'url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")',
@@ -31,24 +31,25 @@ export default function ParallaxEffect() {
       }}
       className="sticky top-0 flex min-h-[70vh] items-center justify-center overflow-hidden -z-10 bg-cover bg-center bg-no-repeat"
     >
-      <div
-        style={{
-          height: "110vh",
-          display: "flex",
-          position: "sticky",
-          top: "0px",
-        }}
+      <div className=" flex h-[110vh] sticky top-0"
+        // style={{
+        //   height: "110vh",
+        //   display: "flex",
+        //   position: "sticky",
+        //   top: "0px",
+        // }}
       >
         <motion.div
-          className="parallaxcChild"
-          style={{
-            height: "70%",
-            width: "50vw",
-          }}
+          className="parallaxcChild h-[30%] w-[50vw]"
+          // style={{
+          //   height: "70%",
+          //   width: "50vw",
+          // }}
         >
           <motion.h2
           style={{ x: xLeft, y: yLeft }}
-          className="p-4 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 text-lg sm:text-2xl mb-24 ml-8 lg:ml-4 lg:text-3xl text-white font-bold">PARALLAX EFFECT</motion.h2>
+          className="p-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter
+           backdrop-blur-sm bg-opacity-40 border border-gray-100 text-lg sm:text-2xl mb-24 ml-8 lg:ml-4 lg:text-3xl text-white font-bold">PARALLAX EFFECT</motion.h2>
         </motion.div>
         
         <motion.div
@@ -67,6 +68,6 @@ export default function ParallaxEffect() {
          
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -25,7 +25,7 @@ export default function Home() {
       <Father />
       <Magic />
       <ParallaxEffect />
-      {/* <Frontend /> */}
+      {<Frontend /> }
     </main>
   )
 }

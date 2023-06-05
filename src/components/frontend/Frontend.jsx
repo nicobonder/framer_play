@@ -14,31 +14,31 @@ export default function Frontend() {
     
 
   return (
-    <main className="nico-background flex w-full h-screen bg-cover bg-[center_right_10rem] justify-end"
+    <main className="nico-background flex w-[full] h-[110vh] lg:h-[100vh] bg-cover bg-cover justify-end"
     >
     <div
-      className='relative flex flex-col w-full sm:w-1/2 h-screen justify-center items-center'
+      className='relative flex flex-col w-[75%] sm:w-[60%] h-[110vh] lg:h-[100vh] justify-center'
       style={{
           background:
             "linear-gradient(175deg, #48A167  0%, rgba(80,4,128,1) 100%)",
           clipPath: "polygon(59% 0, 100% 0, 100% 100%, 31% 100%, 0 58%)",
         }}
     >
-      <div className='relative z-10 mt-12'>
-        <AnimatedTitle text="Do you need a Front-end developer?" />
+      <div className='relative z-10 mt-28'>
+        <AnimatedTitle text="Do you need a Frontend developer?" />
         <AnimatedText text="👈 Contact this guy!" />
           <motion.div
            variants={logos}
            initial='hidden'
            whileInView='visible'
            viewport={{ once: true }}
-          className='w-60 flex place-content-center mt-4 gap-8'>
+          className='flex justify-center items-center w-[290px] sm:w-[340px] md:w-[400px] lg:w-[550px] ml-auto gap-4 mt-4'>
           <a
             href="https://www.linkedin.com/in/nicobonder/"
             target='_blank'
             alt="link to Linkedin"
           >
-            <svg className='w-16 h-16 fill-white' id="linkedin_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <svg className='logoNet fill-white' id="linkedin_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 
                 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3
                 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 
@@ -50,7 +50,7 @@ export default function Frontend() {
           <a href="https://github.com/nicobonder/" 
           target='_blank'
           alt="link to github">
-            <svg className='w-16 h-16 fill-white' id="github_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <svg className='logoNet fill-white' id="github_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
               <path
                 d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 
                         5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0

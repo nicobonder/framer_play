@@ -39,14 +39,14 @@ export default function AnimatedText({ text }) {
     
       return (
         <motion.div
-          style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+          className='overflow-hidden flex justify-center items-center w-[290px] sm:w-[340px] md:w-[400px] lg:w-[550px] lg:py-1 ml-auto'
           variants={container}
           initial="hidden"
            whileInView='visible'
         viewport={{ once: true }}
         >
           {letters.map((letter, index) => (
-            <motion.span variants={child} key={index} className='text-2xl text-white'>
+            <motion.span variants={child} key={index} className='text-lg md:text-2xl lg:text-3xl text-white'>
               {letter === " " ? "\u00A0" : letter}
             </motion.span>
           ))}
