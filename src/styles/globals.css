@@ -35,17 +35,12 @@ body {
   background-size: cover;
 }
 
-@media (width <= 485px) {
+@media (width <= 640px) {
   .nico-background {
-    background-position: calc(80% + 7rem) calc(100%);
+    background-image: none;
   }
 }
 
-@media (485px < width <= 640px) {
-  .nico-background {
-    background-position: calc(80% + 1rem) calc(100%);
-  }
-}
 
 @media (640px < width <= 768px) {
   .nico-background {

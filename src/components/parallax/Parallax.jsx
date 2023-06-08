@@ -4,11 +4,11 @@ import { motion, useTransform, useMotionValue, useScroll } from "framer-motion";
 export default function ParallaxEffect() {
     const { scrollYProgress } = useScroll()
 
-    const xLeft = useTransform(scrollYProgress, [0, 1], [420, -250]);
-    const yLeft = useTransform(scrollYProgress, [0, 1], [100, 200]);
+    const xLeft = useTransform(scrollYProgress, [0, 1], [650, -350]);
+    const yLeft = useTransform(scrollYProgress, [0, 1], [50, 100]);
 
     const xRight = useTransform(scrollYProgress, [0, 1], [-200, 0]);
-    const yRight = useTransform(scrollYProgress, [0, 1], [1800, -280]);
+    const yRight = useTransform(scrollYProgress, [0, 1], [1300, -350]);
 
 //   useEffect(() => {
 //     const handleScroll = () => {
