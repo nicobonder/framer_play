@@ -31,21 +31,9 @@ export default function ParallaxEffect() {
       }}
       className="sticky top-0 flex min-h-[70vh] items-center justify-center overflow-hidden -z-10 bg-cover bg-center bg-no-repeat"
     >
-      <div className=" flex h-[110vh] sticky top-0"
-        // style={{
-        //   height: "110vh",
-        //   display: "flex",
-        //   position: "sticky",
-        //   top: "0px",
-        // }}
-      >
+      <div className=" flex h-[110vh] sticky top-0">
         <motion.div
-          className="parallaxcChild h-[30%] w-[50vw]"
-          // style={{
-          //   height: "70%",
-          //   width: "50vw",
-          // }}
-        >
+          className="parallaxcChild h-[30%] w-[50vw]">
           <motion.h2
           style={{ x: xLeft, y: yLeft }}
           className="p-1 bg-gray-400 rounded-md bg-clip-padding backdrop-filter
