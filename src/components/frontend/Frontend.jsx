@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 import AnimatedTitle from './AnimatedTitle';
 import AnimatedText from './AnimatedText';
 
 export default function Frontend() {
-  const [windowWidth, setWindowWidth] = useState(0);
-
   const logos = {
         hidden: {scale: 0.2, x: -100, opacity: 0 },
         visible:
@@ -13,24 +11,7 @@ export default function Frontend() {
           transition: { duration: 1.5, ease: "easeInOut" },
           }
       };
-
-
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
- // Agregar un event listener para manejar el cambio de tamaño de la ventana
- window.addEventListener("resize", handleResize);
-
- // Obtener el ancho de la pantalla al cargar la página
- setWindowWidth(window.innerWidth);
-
- // Limpiar el event listener cuando el componente se desmonte
- return () => {
-   window.removeEventListener("resize", handleResize);
- };
-}, []);
-
+    
 
   return (
     <main className="nico-background flex w-[full] h-[110vh] lg:h-[100vh] bg-cover bg-cover justify-end"
@@ -43,10 +24,9 @@ export default function Frontend() {
           clipPath: "polygon(59% 0, 100% 0, 100% 100%, 31% 100%, 0 58%)",
         }}
     >
-      
       <div className='relative z-10 mt-28'>
         <AnimatedTitle text="Do you need a Frontend developer?" />
-        <AnimatedText text={windowWidth > 640 ? "👈 Contact this guy!" : "Contact me 👇"} />
+        <AnimatedText text="👈 Contact this guy!" />
           <motion.div
            variants={logos}
            initial='hidden'
